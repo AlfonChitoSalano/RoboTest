@@ -1,5 +1,5 @@
 from pybricks.hubs import EV3Brick
-from pybricks.messaging import BluetoothMailboxServer, TextMailbox
+from pybricks.messaging import TextMailbox, BluetoothMailboxClient
 
 
 class BluetoothManager:
@@ -8,20 +8,25 @@ class BluetoothManager:
         ev3 = EV3Brick()
         ev3.speaker.beep()
 
-        server = BluetoothMailboxServer()
-        mbox = TextMailbox('greeting', server)
+        SERVER = 'DESKTOP-PR2SECF'
+        client = BluetoothMailboxClient()
+        mbox = TextMailbox('greeting', client)
 
         try:
-            # The server must be started before the client!
-            print("waiting for connection...")
-            server.wait_for_connection()
+            print('establishing connection...')
+            client.connect(SERVER)
             print('connected!')
 
-            # In this program, the server waits for the client to send the first message
-            # and then sends a reply.
+            # In this program, the client sends the first message and then waits for the
+            # server to reply.
+            mbox.send('hello!')
+            print('send hello')
+
             mbox.wait()
-            print(mbox.read())
-            mbox.send('hello to you!')
+            print('wait done')
+
+            message_received = mbox.read()
+            print("Message received: ", message_received)
         except Exception as e:
             print("An error occurred:", e)
 
