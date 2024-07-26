@@ -113,7 +113,7 @@ class _CarouselWidgetState extends State<CarouselWidget> {
                         bottom: 10,
                         right: 10,
                         child: IconButton(
-                          icon: const Icon(Icons.share, color: Colors.white),
+                          icon: const Icon(Icons.share, color: Colors.grey),
                           onPressed: () =>
                               _shareImage(widget.products[index].imageUrl),
                         ),
