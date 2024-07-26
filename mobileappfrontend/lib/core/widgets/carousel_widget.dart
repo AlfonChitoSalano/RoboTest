@@ -7,6 +7,7 @@ import 'package:logger/logger.dart';
 import 'package:mobileappfrontend/core/model/products.dart';
 import 'package:mobileappfrontend/core/repositories/product/product_repository.dart';
 import 'package:mobileappfrontend/core/utils/colors.dart';
+import 'package:share/share.dart';
 
 class CarouselWidget extends StatefulWidget {
   final List<Product> products;
@@ -37,6 +38,10 @@ class _CarouselWidgetState extends State<CarouselWidget> {
     setState(() {
       _currentIndex = index;
     });
+  }
+
+  void _shareImage(String imageUrl) {
+    Share.share('Check out this product: $imageUrl');
   }
 
   @override
@@ -76,29 +81,43 @@ class _CarouselWidgetState extends State<CarouselWidget> {
               itemCount: widget.products.length,
               carouselController: _carouselController,
               itemBuilder: (BuildContext context, int index, int realIndex) {
-                return CachedNetworkImage(
-                  imageUrl: widget.products[index].imageUrl,
-                  imageBuilder: (context, imageProvider) => Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(
-                        image: imageProvider,
-                        fit: BoxFit.fill,
+                return Stack(
+                  children: [
+                    CachedNetworkImage(
+                      imageUrl: widget.products[index].imageUrl,
+                      imageBuilder: (context, imageProvider) => Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          image: DecorationImage(
+                            image: imageProvider,
+                            fit: BoxFit.fill,
+                          ),
+                          border: Border.all(
+                            color:
+                                _selectedIndex == index && _currentIndex != -1
+                                    ? Colors.blue
+                                    : Colors.transparent,
+                            width: 4.0,
+                          ),
+                        ),
                       ),
-                      border: Border.all(
-                        color: _selectedIndex == index && _currentIndex != -1
-                            ? Colors.blue
-                            : Colors.transparent,
-                        width: 4.0,
+                      placeholder: (context, url) => Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.black.withOpacity(0.04),
+                        ),
                       ),
                     ),
-                  ),
-                  placeholder: (context, url) => Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.black.withOpacity(0.04),
+                    Positioned(
+                      bottom: 10,
+                      right: 10,
+                      child: IconButton(
+                        icon: const Icon(Icons.share, color: Colors.white),
+                        onPressed: () =>
+                            _shareImage(widget.products[index].imageUrl),
+                      ),
                     ),
-                  ),
+                  ],
                 );
               },
               options: CarouselOptions(
