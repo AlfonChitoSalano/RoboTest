@@ -61,7 +61,7 @@ namespace ApiPoC.Infra
                     Name = "Barong Tagalog",
                     Category = "Formal",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-barongtagalog.png?alt=media&token=0ad0c92f-1f67-4733-8b35-e4a3b702b6d9",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-barongtagalog.png?alt=media&token=4dd289a8-73b5-4005-b1d9-4957ca8690e2",
                     NumberEquivalent = "11"
                 },
                 new()
@@ -101,7 +101,7 @@ namespace ApiPoC.Infra
                     Name = "Pink Dress",
                     Category = "Casual",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/wedding%2Fwedding3.png?alt=media&token=5f9205e8-692d-4923-99c8-3f42c3218e0b",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-pinkdress.png?alt=media&token=087d337a-ec39-4ffb-b35e-214de21e3804",
                     NumberEquivalent = "20"
                 },
                 new()
@@ -125,7 +125,7 @@ namespace ApiPoC.Infra
                     Name = "Monochrome Dress",
                     Category = "Evening Wear",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/business%2Fbusiness3.png?alt=media&token=a3c634e3-8d9b-4d56-87d5-289fe558eaf4",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-monodress.png?alt=media&token=259df036-192b-4242-8367-a580fe9fd1f8",
                     NumberEquivalent = "24"
                 },              
                 new()
