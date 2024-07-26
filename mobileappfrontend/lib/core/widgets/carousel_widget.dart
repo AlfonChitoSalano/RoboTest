@@ -81,43 +81,61 @@ class _CarouselWidgetState extends State<CarouselWidget> {
               itemCount: widget.products.length,
               carouselController: _carouselController,
               itemBuilder: (BuildContext context, int index, int realIndex) {
-                return Stack(
-                  children: [
-                    CachedNetworkImage(
-                      imageUrl: widget.products[index].imageUrl,
-                      imageBuilder: (context, imageProvider) => Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: DecorationImage(
-                            image: imageProvider,
-                            fit: BoxFit.fill,
+                if (widget.isConnected) {
+                  return Stack(
+                    children: [
+                      CachedNetworkImage(
+                        imageUrl: widget.products[index].imageUrl,
+                        imageBuilder: (context, imageProvider) => Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            image: DecorationImage(
+                              image: imageProvider,
+                              fit: BoxFit.fill,
+                            ),
+                            border: Border.all(
+                              color:
+                                  _selectedIndex == index && _currentIndex != -1
+                                      ? Colors.blue
+                                      : Colors.transparent,
+                              width: 4.0,
+                            ),
                           ),
-                          border: Border.all(
-                            color:
-                                _selectedIndex == index && _currentIndex != -1
-                                    ? Colors.blue
-                                    : Colors.transparent,
-                            width: 4.0,
+                        ),
+                        placeholder: (context, url) => Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Colors.black.withOpacity(0.04),
                           ),
                         ),
                       ),
-                      placeholder: (context, url) => Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.black.withOpacity(0.04),
+                      Positioned(
+                        bottom: 10,
+                        right: 10,
+                        child: IconButton(
+                          icon: const Icon(Icons.share, color: Colors.white),
+                          onPressed: () =>
+                              _shareImage(widget.products[index].imageUrl),
                         ),
                       ),
+                    ],
+                  );
+                }
+
+                return Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    image: DecorationImage(
+                      image: AssetImage(widget.products[index].imageUrl),
+                      fit: BoxFit.fill,
                     ),
-                    Positioned(
-                      bottom: 10,
-                      right: 10,
-                      child: IconButton(
-                        icon: const Icon(Icons.share, color: Colors.white),
-                        onPressed: () =>
-                            _shareImage(widget.products[index].imageUrl),
-                      ),
+                    border: Border.all(
+                      color: _selectedIndex == index && _currentIndex != -1
+                          ? Colors.blue
+                          : Colors.transparent,
+                      width: 4.0,
                     ),
-                  ],
+                  ),
                 );
               },
               options: CarouselOptions(
