@@ -61,7 +61,7 @@ namespace ApiPoC.Infra
                     Name = "Barong Tagalog",
                     Category = "Formal",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/party%2Fjacket1.png?alt=media&token=a37b4f10-293d-4975-b676-119556fa20ac",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-barongtagalog.png?alt=media&token=0ad0c92f-1f67-4733-8b35-e4a3b702b6d9",
                     NumberEquivalent = "11"
                 },
                 new()
@@ -69,7 +69,7 @@ namespace ApiPoC.Infra
                     Name = "School Uniform Boys",
                     Category = "Formal",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/party%2Fjacket2.jpg?alt=media&token=9dde9e0d-3199-4f2f-87f5-dccd83d984eb",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-boysuniform.png?alt=media&token=df3f6604-6867-4597-9874-f2f48d181912",
                     NumberEquivalent = "12"
                 },
                 new()
@@ -77,7 +77,7 @@ namespace ApiPoC.Infra
                     Name = "School Uniform Girls",
                     Category = "Formal",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/party%2Fblazerandpants.jpg?alt=media&token=61628aed-36d8-4dac-b682-acd94823486a",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-schooluniform.png?alt=media&token=612ceeb9-88c2-4228-ad0f-7c18c817e593",
                     NumberEquivalent = "13"
                 },              
                 new()
@@ -85,7 +85,7 @@ namespace ApiPoC.Infra
                     Name = "Flower Dress",
                     Category = "Casual",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/wedding%2Fwedding1.png?alt=media&token=da464a44-dda6-44a4-af14-cf61936fab93",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-flowerdress.png?alt=media&token=90a130d6-d570-4dec-8ea6-1007f2f35122",
                     NumberEquivalent = "18"
                 },
                 new()
@@ -93,7 +93,7 @@ namespace ApiPoC.Infra
                     Name = "Black Dress",
                     Category = "Casual",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/wedding%2Fwedding2.png?alt=media&token=0336e2d9-fba4-4049-8460-ea341e3e6cfb",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-blackdress.png?alt=media&token=f9d9aeb7-76a2-4d8e-aeb4-a841cdbb2b79",
                     NumberEquivalent = "19"
                 },
                 new()
@@ -109,7 +109,7 @@ namespace ApiPoC.Infra
                     Name = "Red Dress",
                     Category = "Evening Wear",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/business%2Fbusiness1.png?alt=media&token=c30d4f17-6a1e-42fb-b723-1436873c1e5f",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-reddress.png?alt=media&token=2f183317-0e3b-45a1-a3b8-1c629a2dbdb9",
                     NumberEquivalent = "22"
                 },
                 new()
@@ -117,7 +117,7 @@ namespace ApiPoC.Infra
                     Name = "White Dress",
                     Category = "Evening Wear",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/business%2Fbusiness2.png?alt=media&token=2e4b7e7d-e981-41b4-9550-2a7f974a3095",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-whitedress.png?alt=media&token=119fe74c-8290-4f17-b9b0-a39afb08310f",
                     NumberEquivalent = "23"
                 },
                 new()
@@ -133,7 +133,7 @@ namespace ApiPoC.Infra
                     Name = "Karate Uniform",
                     Category = "Sports",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/beach%2Fbeach1.png?alt=media&token=d2f5d06c-0b00-48b2-aa47-d07522e30e2b",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fsports-karate.png?alt=media&token=981c8ba9-82c7-4326-b84d-26bc3eb7aafb",
                     NumberEquivalent = "26"
                 },
                 new()
@@ -141,7 +141,7 @@ namespace ApiPoC.Infra
                     Name = "Badminton Uniform",
                     Category = "Sports",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/beach%2Fbeach2.png?alt=media&token=c52c3d40-58ad-44bd-9ad9-8b4d93507577",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fsports-sportshirt.png?alt=media&token=c74e46c5-b497-4513-bdc3-0fd552bf9187",
                     NumberEquivalent = "27"
                 },
                 new()
@@ -149,7 +149,7 @@ namespace ApiPoC.Infra
                     Name = "Soccer Uniform",
                     Category = "Sports",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/beach%2Fbeach3.png?alt=media&token=acce52de-44bc-4ae5-a732-f9dad4ec3f37",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fsports-soccer.png?alt=media&token=35ca5dfc-0019-4d76-aa87-48a246dad3f9",
                     NumberEquivalent = "28"
                 },
                 //intentionally comment out to be null in FE
