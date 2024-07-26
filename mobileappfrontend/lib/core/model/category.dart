@@ -5,7 +5,7 @@ class Category {
   final String numberEquivalent;
   final List<Product> products;
 
-  Category({
+  const Category({
     required this.name,
     required this.numberEquivalent,
     required this.products,
@@ -25,3 +25,31 @@ class Category {
         'products': products.map((product) => product.toJson()).toList(),
       };
 }
+
+final List<Category> categoriesItems = [
+  const Category(
+    name: 'Formal',
+    numberEquivalent: '1',
+    products: [],
+  ),
+  const Category(
+    name: 'Casual',
+    numberEquivalent: '2',
+    products: [],
+  ),
+  const Category(
+    name: 'Evening Wear',
+    numberEquivalent: '3',
+    products: [],
+  ),
+  const Category(
+    name: 'Sports',
+    numberEquivalent: '4',
+    products: [],
+  ),
+  const Category(
+    name: 'Wedding',
+    numberEquivalent: '5',
+    products: [],
+  ),
+];

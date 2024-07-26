@@ -5,25 +5,7 @@ import 'package:mobileappfrontend/core/repositories/product/product_repository.d
 class ProductRepositoryMock implements ProductRepository {
   @override
   Future<List<Category>> getProductCategoriesAsync() {
-    Set<String> categoryNames = <String>{};
-    List<Category> productCategories = [];
-
-    for (var product in productsItems) {
-      if (!categoryNames.contains(product.category)) {
-        categoryNames.add(product.category);
-        productCategories.add(
-          Category(
-            name: product.category,
-            numberEquivalent: (productCategories.length + 1).toString(),
-            products: productsItems
-                .where((item) => item.category == product.category)
-                .toList(),
-          ),
-        );
-      }
-    }
-
-    return Future.value(productCategories);
+    return Future.value(categoriesItems);
   }
 
   @override

@@ -21,6 +21,8 @@ dependencies:
   flutter_native_splash: ^2.4.0
   cached_network_image: ^3.3.1
   change_app_package_name: ^1.1.0
+  connectivity_plus: ^5.0.2
+  logger: ^2.4.0
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +59,11 @@ flutter:
 
   assets:
     - assets/icons/
+    - assets/data/beach/
+    - assets/data/business/
+    - assets/data/party/
+    - assets/data/sports/
+    - assets/data/wedding/
 
   fonts:
     - family: Montserrat
