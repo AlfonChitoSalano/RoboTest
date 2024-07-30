@@ -66,18 +66,18 @@ namespace ApiPoC.Infra
                 },
                 new()
                 {
-                    Name = "School Uniform Boys",
+                    Name = "White Tuxedo",
                     Category = "Formal",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-boysuniform.png?alt=media&token=df3f6604-6867-4597-9874-f2f48d181912",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-tuxedo.png?alt=media&token=db678243-7686-4ae8-ab8b-a8394b8035c0",
                     NumberEquivalent = "12"
                 },
                 new()
                 {
-                    Name = "School Uniform Girls",
+                    Name = "Philippine Long Dress",
                     Category = "Formal",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-schooluniform.png?alt=media&token=612ceeb9-88c2-4228-ad0f-7c18c817e593",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fformal-longdress.png?alt=media&token=c3b06e54-d993-4cc7-909a-6674c7479dd8",
                     NumberEquivalent = "13"
                 },              
                 new()
@@ -90,18 +90,18 @@ namespace ApiPoC.Infra
                 },
                 new()
                 {
-                    Name = "Black Dress",
+                    Name = "Leather Jacket",
                     Category = "Casual",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-blackdress.png?alt=media&token=f9d9aeb7-76a2-4d8e-aeb4-a841cdbb2b79",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-leather.png?alt=media&token=6cee3dc3-521e-4d61-b9ca-4150e2caf018",
                     NumberEquivalent = "19"
                 },
                 new()
                 {
-                    Name = "Pink Dress",
+                    Name = "Raffle Shirt with Black Pants",
                     Category = "Casual",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-pinkdress.png?alt=media&token=087d337a-ec39-4ffb-b35e-214de21e3804",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fcasual-raffle.png?alt=media&token=b75f8e7b-51a3-41ff-94a2-07d21f2d121e",
                     NumberEquivalent = "20"
                 },
                 new()
@@ -114,18 +114,18 @@ namespace ApiPoC.Infra
                 },
                 new()
                 {
-                    Name = "White Dress",
+                    Name = "Suit",
                     Category = "Evening Wear",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-whitedress.png?alt=media&token=119fe74c-8290-4f17-b9b0-a39afb08310f",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-suit.png?alt=media&token=1ffe0a4f-f2d3-4384-8bbd-5733f4364897",
                     NumberEquivalent = "23"
                 },
                 new()
                 {
-                    Name = "Monochrome Dress",
+                    Name = "Long Gown",
                     Category = "Evening Wear",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-monodress.png?alt=media&token=259df036-192b-4242-8367-a580fe9fd1f8",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Feve-gown.png?alt=media&token=30830aea-3659-48d3-97fa-20cfd6463ee7",
                     NumberEquivalent = "24"
                 },              
                 new()
@@ -138,15 +138,15 @@ namespace ApiPoC.Infra
                 },
                 new()
                 {
-                    Name = "Badminton Uniform",
+                    Name = "Badminton",
                     Category = "Sports",
                     ImageUrl =
-                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fsports-sportshirt.png?alt=media&token=c74e46c5-b497-4513-bdc3-0fd552bf9187",
+                        "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fsports-badminton.png?alt=media&token=a7aaea67-7013-41ed-b00b-1add5a436dfe",
                     NumberEquivalent = "27"
                 },
                 new()
                 {
-                    Name = "Soccer Uniform",
+                    Name = "Soccer",
                     Category = "Sports",
                     ImageUrl =
                         "https://firebasestorage.googleapis.com/v0/b/closetapp-c815a.appspot.com/o/_todelchange%2Fsports-soccer.png?alt=media&token=35ca5dfc-0019-4d76-aa87-48a246dad3f9",
