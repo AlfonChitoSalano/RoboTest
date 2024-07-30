@@ -48,7 +48,7 @@ final List<Category> categoriesItems = [
     products: [],
   ),
   const Category(
-    name: 'Wedding',
+    name: 'More Sports Wear',
     numberEquivalent: '5',
     products: [],
   ),
